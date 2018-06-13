@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class App {
 	public static void main(String[] args) {
 		String str = args[0];
-		System.out.println(str);
+		System.out.println("第１引数　：　" + str);
 		int crd = Integer.parseInt(args[0]);
 		ArrayList<Integer> listPower = new ArrayList<Integer>();
 		ArrayList<Integer> listCost = new ArrayList<Integer>();
