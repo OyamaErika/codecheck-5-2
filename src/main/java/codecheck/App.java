@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class App {
 	public static void main(String[] args) {
-		System.out.println("第１引数　：　" + args[0]);
-		System.out.println("第２引数　：　" + args[1]);
-		int crd = Integer.parseInt(args[0]);
+		String column = args[0];
+		String[] str = column.split(" ");
+		int crd = Integer.parseInt(str[0]);
 		ArrayList<Integer> listPower = new ArrayList<Integer>();
 		ArrayList<Integer> listCost = new ArrayList<Integer>();
 		int num = 0;
 
 		for (int i = 0 ; num < crd; i = i+2) {
-			listPower.add(num, Integer.parseInt(args[i+2]));
-			listCost.add(num, Integer.parseInt(args[i+3]));
+			listPower.add(num, Integer.parseInt(str[i+2]));
+			listCost.add(num, Integer.parseInt(str[i+3]));
 			num++;
 		}
 
-		int mp = Integer.parseInt(args[1]);
+		int mp = Integer.parseInt(str[1]);
 		int ans = 0;
 		int deleteFlg = 1;
 
